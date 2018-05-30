@@ -10,8 +10,8 @@ import Footer from '../components/Footer';
 
 class Home extends React.Component {
   images = [
-    '/images/grid/1980shorrormovies.jpg',
     '/images/grid/3609_sheffield.jpg',
+    '/images/grid/1980shorrormovies.jpg',
     '/images/grid/airyordan1_dribbble.jpg',
     '/images/grid/coursewrkkid_tee1.jpg',
     '/images/grid/feb_coursewrkwaves.png',
