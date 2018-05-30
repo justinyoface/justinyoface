@@ -133,7 +133,7 @@ class Home extends React.Component {
           <main className="grid-noGutter-noBottom">
             <div className="col-10_sm-12" data-push-left="off-1_sm-0">
               <section className="homeHero">
-                <h1 className="homeHero__title">The Art & Design Work of Justin Rodriguez</h1>
+                <h1 className="homeHero__title">The Art & Design Work  of Justin Rodriguez</h1>
                 <div className="homeHero__description">Scroll down and see what miscellaneous work I’ve been up to.</div>
               </section>
 
