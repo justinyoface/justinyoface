@@ -99,9 +99,6 @@ class About extends React.Component {
                       <li>
                         <a className="aboutHero__links__link blueLink" href="https://www.behance.net/justinrodriguez">Behance</a>
                       </li>
-                      <li>
-                        <a className="aboutHero__links__link blueLink" href="https://medium.com/@justinyoface">Medium</a>
-                      </li>
                     </ul>
                   </div>
                 </div>
