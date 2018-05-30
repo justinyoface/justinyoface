@@ -1,0 +1,290 @@
+.aboutHero {
+  @include gtMd {
+    padding: 100px 0;
+  }
+  @include md {
+    padding: 80px 15px;
+  }
+  @include sm {
+    padding: 15px 15px 80px 15px;
+  }
+}
+
+.aboutHero__topGrid {
+  @include md {
+    flex-direction: column-reverse;
+  }
+}
+
+.aboutHero__titleContainer {
+  position: relative;
+  z-index: 1;
+}
+
+.aboutHero__title {
+  color: $yellow;
+  font-weight: 700;
+
+  @include gtMd {
+    padding: 80px 0;
+    font-size: 52px;
+    line-height: 64px;
+  }
+  @include md {
+    padding: 42px 0 34px 0;
+    font-size: 28px;
+    line-height: 38px;
+  }
+}
+
+.aboutHero__portraitContainer {
+  position: relative;
+  width: 100%;
+
+  @include gtMd {
+    height: 500px;
+  }
+  @include md {
+    max-width: 500px !important;
+    margin: 0 auto !important;
+  }
+}
+
+.aboutHero__portrait {
+  background-color: $yellow;
+
+  @include gtMd {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 147%;
+  }
+  @include md {
+    position: relative;
+    padding-top: 100% !important; // force square
+  }
+}
+
+.aboutHero__description {
+  @include gtMd {
+    margin-top: 60px;
+  }
+}
+
+.aboutHero__links {
+  @include gtMd {
+    margin-top: 60px;
+  }
+  @include md {
+    margin-top: 34px;
+  }
+}
+
+.aboutHero__links__label {
+  margin-bottom: 13px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: $darkGray;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.aboutHero__links__link {
+  line-height: 32px;
+}
+
+.aboutHero__resumeLink {
+  margin-top: 40px;
+
+  @include md {
+    text-align: center;
+  }
+}
+
+.aboutServices {
+  background-color: $veryLightGray;
+
+  @include gtMd {
+    padding: 145px 0;
+  }
+  @include md {
+    padding: 70px 15px 38px 15px;
+  }
+}
+
+.aboutServices__label {
+  font-weight: 700;
+
+  @include gtMd {
+    margin-bottom: 12px;
+    font-size: 28px;
+  }
+  @include md {
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+}
+
+.aboutServices__service {
+  color: $darkGray;
+
+  @include gtMd {
+    line-height: 44px;
+  }
+  @include md {
+    line-height: 36px;
+
+    &:last-of-type {
+      margin-bottom: 32px;
+    }
+  }
+}
+
+.aboutClients {
+  @include gtMd {
+    padding: 145px 0;
+  }
+  @include md {
+    padding: 90px 0 70px 0;
+  }
+}
+
+.aboutClients__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 60px;
+  margin: 30px auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.aboutBrand {
+  overflow: hidden;
+  color: $white;
+  background-color: $black;
+
+  @include gtMd {
+    padding: 145px 0;
+  }
+  @include md {
+    padding: 60px 15px;
+  }
+  @include xs {
+    padding-top: 17px;
+  }
+}
+
+.aboutBrand__imageContainer {
+  position: relative;
+
+  @include md {
+    max-width: 500px !important;
+    margin: 0 auto !important;
+  }
+}
+
+.aboutBrand__image {
+  padding-top: 100% !important; // force square
+  background-color: $yellow;
+
+  @include gtMd {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+  }
+  @include md {
+    position: relative;
+  }
+}
+
+.aboutBrand__title {
+  position: relative;
+  z-index: 1;
+  font-weight: 700;
+
+  @include gtMd {
+    left: -225px;
+    width: 650px;
+    padding: 30px 0;
+    font-size: 52px;
+    line-height: 64px;
+  }
+  @include md {
+    padding: 42px 0 34px 0;
+    font-size: 28px;
+    line-height: 38px;
+  }
+}
+
+.aboutBrand__storeLink {
+  margin-top: 40px;
+
+  @include md {
+    text-align: center;
+  }
+}
+
+.aboutContact {
+  @include gtSm {
+    padding: 145px 0;
+  }
+  @include sm {
+    padding: 70px 15px;
+    text-align: center;
+  }
+}
+
+.aboutContact__title {
+  margin-bottom: 40px;
+
+  @include sm {
+    width: 140px;
+    margin-bottom: 30px;
+  }
+}
+
+.aboutContact__formContainer {
+  @include gtSm {
+    margin-left: 55px;
+    border-left: 1px solid $lightGray;
+  }
+  @include sm {
+    margin-top: 50px;
+  }
+}
+
+.aboutContact__form {
+  @include gtSm {
+    padding-left: 70px;
+  }
+}
+
+.aboutContact__form__field {
+  margin-bottom: 24px;
+  padding: 12px 2px;
+  border-bottom: 2px solid $mediumLightGray;
+}
+
+.aboutContact__form__button {
+  margin-top: 16px;
+}
+
+.aboutContact__thanks {
+  font-weight: 700;
+
+  @include gtSm {
+    padding-left: 70px;
+    font-size: 52px;
+    line-height: 64px;
+  }
+  @include sm {
+    font-size: 28px;
+    line-height: 38px;
+  }
+}

@@ -1,0 +1,99 @@
+.caseStudies {
+  @include gtSm {
+    padding-top: 100px;
+  }
+  @include sm {
+    padding: 15px 15px 0 15px;
+  }
+}
+
+.caseStudy {
+  @include gtSm {
+    &:not(:last-of-type) {
+      margin-bottom: 160px;
+    }
+
+    &:nth-of-type(odd) {
+      .caseStudy__content {
+        padding-right: 100px;
+      }
+    }
+
+    &:nth-of-type(even) {
+       > div {
+        flex-direction: row-reverse; // override grid
+      }
+
+      .caseStudy__content {
+        padding-left: 100px;
+      }
+    }
+  }
+  @include sm {
+    &:not(:last-of-type) {
+      margin-bottom: 80px;
+    }
+
+     > div {
+      flex-direction: column-reverse !important; // override grid
+    }
+  }
+}
+
+.caseStudy__content {
+  @include sm {
+    text-align: center;
+  }
+}
+
+.caseStudy__content__title {
+  color: $blue;
+  font-weight: 700;
+
+  @include gtSm {
+    margin-top: 80px;
+    font-size: 52px;
+    line-height: 64px;
+  }
+  @include sm {
+    margin-top: 20px;
+    font-size: 28px;
+    line-height: 38px;
+  }
+}
+
+.sectionLabel.caseStudy__content__label {
+  margin-bottom: 24px;
+
+  @include gtSm {
+    margin-top: 10px;
+    text-align: left;
+  }
+  @include sm {
+    margin-top: 4px;
+  }
+}
+
+.caseStudy__imageContainer {
+  position: relative;
+  width: 100%;
+
+  @include sm {
+    max-width: 500px !important;
+    margin: 0 auto;
+  }
+}
+
+.caseStudy__image {
+  background-color: $yellow;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @include gtSm {
+    min-height: 400px;
+  }
+  @include sm {
+    padding-top: 100%; // force square
+  }
+}

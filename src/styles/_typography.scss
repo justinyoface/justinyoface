@@ -1,0 +1,53 @@
+@font-face {
+  font-family: 'GTWalsheim';
+  font-weight: 800;
+  font-style: normal;
+
+  src: url('/fonts/GTWalsheim-Black.eot?#iefix') format('embedded-opentype'),  url('/fonts/GTWalsheim-Black.woff') format('woff'), url('/fonts/GTWalsheim-Black.ttf')  format('truetype'), url('/fonts/GTWalsheim-Black.svg#GTWalsheim-Black') format('svg');
+}
+
+@font-face {
+  font-family: 'GTWalsheim';
+  font-weight: 700;
+  font-style: normal;
+
+  src: url('/fonts/GTWalsheim-Bold.eot?#iefix') format('embedded-opentype'),  url('/fonts/GTWalsheim-Bold.woff') format('woff'), url('/fonts/GTWalsheim-Bold.ttf')  format('truetype'), url('/fonts/GTWalsheim-Bold.svg#GTWalsheim-Bold') format('svg');
+}
+
+@font-face {
+  font-family: 'GTWalsheim';
+  font-weight: 500;
+  font-style: normal;
+
+  src: url('/fonts/GTWalsheim-Medium.eot?#iefix') format('embedded-opentype'),  url('/fonts/GTWalsheim-Medium.woff') format('woff'), url('/fonts/GTWalsheim-Medium.ttf')  format('truetype'), url('/fonts/GTWalsheim-Medium.svg#GTWalsheim-Medium') format('svg');
+}
+
+@font-face {
+  font-family: 'GTWalsheim';
+  font-weight: 400;
+  font-style: normal;
+
+  src: url('/fonts/GTWalsheim-Regular.eot?#iefix') format('embedded-opentype'),  url('/fonts/GTWalsheim-Regular.woff') format('woff'), url('/fonts/GTWalsheim-Regular.ttf')  format('truetype'), url('/fonts/GTWalsheim-Regular.svg#GTWalsheim-Regular') format('svg');
+}
+
+@font-face {
+  font-family: 'GTWalsheim';
+  font-weight: 400;
+  font-style: oblique;
+
+  src: url('/fonts/GTWalsheim-RegularOblique.eot?#iefix') format('embedded-opentype'),  url('/fonts/GTWalsheim-RegularOblique.woff') format('woff'), url('/fonts/GTWalsheim-RegularOblique.ttf')  format('truetype'), url('/fonts/GTWalsheim-RegularOblique.svg#GTWalsheim-RegularOblique') format('svg');
+}
+
+body {
+  font-family: 'GTWalsheim', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.6;
+
+  @include sm {
+    font-size: 16px;
+  }
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

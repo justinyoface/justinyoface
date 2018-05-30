@@ -1,0 +1,161 @@
+.homeHero {
+  padding: 40px 0;
+  text-align: center;
+
+  @include sm {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+.homeHero__title {
+  margin: 0 auto;
+  font-weight: 700;
+
+  @include gtSm {
+    max-width: 350px;
+    font-size: 32px;
+    line-height: 46px;
+  }
+  @include sm {
+    max-width: 230px;
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+
+.homeHero__description {
+  @include gtSm {
+    margin-top: 30px;
+  }
+  @include sm {
+    margin-top: 15px;
+  }
+}
+
+.gridContainer {
+  position: relative;
+}
+
+.gridContainer__loader {
+  position: absolute;
+  top: 45px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.latestGrid {
+  margin: 0 auto;
+  transition: opacity 0.3s $easeOutCubic;
+
+  @include sm {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+.latestGrid:not(.latestGrid--ready) {
+  height: 100vh;
+  opacity: 0;
+}
+
+.latestGrid__image {
+  @include gtSm {
+    width: 248px;
+    cursor: pointer;
+  }
+  @include sm {
+    width: 290px;
+  }
+}
+
+.latestLightbox {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transition: opacity 0.3s $easeOutCubic, transform 0.3s $easeOutCubic;
+
+  @include sm {
+    user-select: none;
+    pointer-events: none;
+    opacity: 0;
+  }
+
+  &:not(.latestLightbox--open) {
+    user-select: none;
+    transform: scale(0.95);
+    pointer-events: none;
+    opacity: 0;
+  }
+
+  &:before {
+    position: absolute;
+    top: -50vh;
+    right: -50vw;
+    bottom: -50vh;
+    left: -50vw;
+    content: '';
+    background-color: $white;
+  }
+}
+
+.latestLightbox__close {
+  position: absolute;
+  z-index: 9999;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+}
+
+// Slider/slick styles & overrides
+
+.slick-slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.slider__image {
+  width: 800px;
+  max-width: calc(100vw - 200px);
+  height: 800px;
+  max-height: calc(100vh - 200px);
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.slick-arrow {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  transform: translateY(-50%);
+
+  &.slick-disabled {
+    cursor: default;
+    opacity: 0;
+  }
+}
+
+.slick-prev {
+  left: 0;
+}
+
+.slick-next {
+  right: 0;
+}

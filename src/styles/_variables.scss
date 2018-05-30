@@ -1,0 +1,66 @@
+// Colors
+
+$black: #202124;
+$darkGray: #5F6368;
+$mediumGray: #9EA2AA;
+$mediumLightGray: #C5C7CB;
+$lightGray: #E9EAEE;
+$veryLightGray: #F6F6F6;
+$white: #FFFFFF;
+$yellow: #FDDA74;
+$blue: #52CDE6;
+
+// Easings
+
+$easeOutCubic: cubic-bezier(0.215, 0.61, 0.355, 1);
+$easeInOutCubic: cubic-bezier(0.645, 0.045, 0.355, 1);
+
+// Breakpoint mixins
+
+@mixin gtLg {
+  @media (min-width: 1281px) {
+    @content;
+  }
+}
+
+@mixin gtMd {
+  @media (min-width: 1025px) {
+    @content;
+  }
+}
+
+@mixin gtSm {
+  @media (min-width: 769px) {
+    @content;
+  }
+}
+
+@mixin gtXs {
+  @media (min-width: 577px) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media (max-width: 1280px) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin sm {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin xs {
+  @media (max-width: 576px) {
+    @content;
+  }
+}
