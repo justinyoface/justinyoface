@@ -59,7 +59,7 @@ class About extends React.Component {
             <section className="aboutHero">
               <div className="grid-noGutter-noBottom aboutHero__topGrid">
                 <div className="col-6_md-12 aboutHero__titleContainer" data-push-left="off-1_md-0">
-                  <h1 className="aboutHero__title">Justin Rodriguez is a
+                  <h1 className="aboutHero__title slideUp">Justin Rodriguez is a
                     designer, illustrator, and entrepreneur based in Chicago, IL USA.</h1>
                 </div>
 
@@ -107,7 +107,7 @@ class About extends React.Component {
               <div className="grid-noGutter-noBottom">
                 <div className="col-5_md-12" data-push-left="off-2_md-0">
                   <div className="aboutHero__resumeLink">
-                    <a className="button" href="https://www.linkedin.com/in/justinrod/" target="_blank" rel="noopener noreferrer">View Resume</a>
+                    <a className="button" href="https://www.linkedin.com/in/justinrod/" target="_blank" rel="noopener noreferrer"><span>View Resume</span></a>
                   </div>
                 </div>
               </div>
@@ -215,7 +215,7 @@ class About extends React.Component {
                   <p>The studio side is a brand-focused consultancy providing creative services in branding, design, art direction, photography, apparel and much more.</p>
 
                   <div className="aboutBrand__storeLink">
-                    <a className="button" href="https://courseworkbrand.com/">Visit Site</a>
+                    <a className="button" href="https://courseworkbrand.com/"><span>Visit Site</span></a>
                   </div>
                 </div>
               </div>
@@ -285,7 +285,7 @@ class About extends React.Component {
                         type="submit"
                         className="button aboutContact__form__button"
                         disabled={formProcessing}
-                      >Send</button>
+                      ><span>Send</span></button>
                     </form>
                   }
 

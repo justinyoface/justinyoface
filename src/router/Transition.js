@@ -24,12 +24,15 @@ class Transition extends React.Component {
 
   render() {
     return (
-      <TransitionGroup component="div">
+      <TransitionGroup
+        component="div"
+        className="transitionGroup"
+      >
         <CSSTransition
           key={this.props.location}
-          classNames="transition"
+          classNames="page" // prefix for transition states
           timeout={{
-           enter: 300,
+           enter: 400,
            exit: 0
           }}
         >

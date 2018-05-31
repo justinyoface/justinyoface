@@ -20,7 +20,7 @@ class Header extends React.Component {
   closeNav = () => {
     setTimeout(() => {
       this.setState({ isNavOpen: false });
-    }, 300);
+    }, 500);
   };
 
   hideLinks = () => {

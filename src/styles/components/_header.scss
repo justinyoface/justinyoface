@@ -104,7 +104,7 @@
     flex-direction: column;
     justify-content: center;
     padding-bottom: 60px;
-    transition: opacity 0.1s $easeOutCubic;
+    transition: opacity 0.2s $easeOutCubic;
     background-color: $white;
 
     &:not(.header__links--open) {
@@ -127,17 +127,12 @@
     letter-spacing: 1px;
     font-size: 13px;
 
-    &:before {
-      height: 3px;
-    }
-
     &:hover:not(.header__link--active),
     &:focus:not(.header__link--active) {
       color: $black;
 
       &:before {
-        transition: transform 0.3s $easeOutCubic;
-        transform: scaleY(10);
+        transform: scale(1.15, 1);
         opacity: 1;
       }
     }
@@ -147,21 +142,18 @@
     letter-spacing: 0.5px;
     font-size: 28px;
     line-height: 1;
-
-    &:before {
-      height: 4px;
-    }
   }
 
   &:before {
     position: absolute;
     z-index: -1;
+    top: 0;
     right: 0;
     bottom: 0;
     left: 0;
     content: '';
     transition: transform 0.3s $easeOutCubic, opacity 0.3s $easeOutCubic;
-    transform: scaleY(0);
+    transform: scale(1, 0);
     transform-origin: bottom;
     pointer-events: none;
     opacity: 0;
@@ -173,7 +165,7 @@
   color: $black;
 
   &:before {
-    transform: scaleY(1);
+    transform: scale(1, 0.1);
     opacity: 1;
   }
 }

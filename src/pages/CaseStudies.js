@@ -26,7 +26,7 @@ class CaseStudies extends React.Component {
                         <a
                           className="button"
                           href=""
-                        >View Project</a>
+                        ><span>View Project</span></a>
                       </div>
                       <div className="col-7_md-5_sm-12 caseStudy__imageContainer">
                         <PreloadImage
@@ -45,7 +45,7 @@ class CaseStudies extends React.Component {
                         <a
                           className="button"
                           href=""
-                        >View Project</a>
+                        ><span>View Project</span></a>
                       </div>
                       <div className="col-7_md-5_sm-12 caseStudy__imageContainer">
                         <PreloadImage
@@ -64,7 +64,7 @@ class CaseStudies extends React.Component {
                         <a
                           className="button"
                           href=""
-                        >View Project</a>
+                        ><span>View Project</span></a>
                       </div>
                       <div className="col-7_md-5_sm-12 caseStudy__imageContainer">
                         <PreloadImage
@@ -83,7 +83,7 @@ class CaseStudies extends React.Component {
                         <a
                           className="button"
                           href=""
-                        >View Project</a>
+                        ><span>View Project</span></a>
                       </div>
                       <div className="col-7_md-5_sm-12 caseStudy__imageContainer">
                         <PreloadImage
@@ -102,7 +102,7 @@ class CaseStudies extends React.Component {
                         <a
                           className="button"
                           href=""
-                        >View Project</a>
+                        ><span>View Project</span></a>
                       </div>
                       <div className="col-7_md-5_sm-12 caseStudy__imageContainer">
                         <PreloadImage

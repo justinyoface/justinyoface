@@ -76,6 +76,7 @@
 
 .caseStudy__imageContainer {
   position: relative;
+  overflow: hidden;
   width: 100%;
 
   @include sm {
@@ -85,6 +86,8 @@
 }
 
 .caseStudy__image {
+  transition: transform 0.6s $easeOutCubic;
+  transform: scale(1);
   background-color: $yellow;
   background-repeat: no-repeat;
   background-position: center;
@@ -95,5 +98,11 @@
   }
   @include sm {
     padding-top: 100%; // force square
+  }
+}
+
+.caseStudy:hover .caseStudy__image {
+  @include gtSm {
+    transform: scale(1.1);
   }
 }
