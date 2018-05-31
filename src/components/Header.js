@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import classNames from 'classnames';
+import { TweenMax, Power2 } from 'gsap';
 
 class Header extends React.Component {
   state = {
@@ -8,15 +9,33 @@ class Header extends React.Component {
   };
 
   toggleNav = () => {
-    this.setState((state) => {
-      return { isNavOpen: !state.isNavOpen }
-    });
+    if (this.state.isNavOpen) {
+      this.setState({ isNavOpen: false });
+    } else {
+      this.hideLinks();
+      this.setState({ isNavOpen: true }, this.showLinks);
+    }
   };
 
   closeNav = () => {
     setTimeout(() => {
       this.setState({ isNavOpen: false });
     }, 300);
+  };
+
+  hideLinks = () => {
+    TweenMax.set('.header__link', { opacity: 0 });
+  };
+
+  showLinks = () => {
+    TweenMax.staggerFromTo('.header__link', 0.6, {
+        y: 50
+      }, {
+        opacity: 1,
+        y: 0,
+        ease: Power2.easeOut,
+        delay: 0.2
+      }, 0.1);
   };
 
   render() {

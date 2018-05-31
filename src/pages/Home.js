@@ -50,7 +50,7 @@ class Home extends React.Component {
     document.addEventListener('keydown', this.closeLightboxIfEsc, false);
   }
 
-  componentWillUnmount(){
+  componentWillUnmount() {
     document.removeEventListener('keydown', this.closeLightboxIfEsc, false);
   }
 
