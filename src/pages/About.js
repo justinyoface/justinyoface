@@ -107,7 +107,7 @@ class About extends React.Component {
               <div className="grid-noGutter-noBottom">
                 <div className="col-5_md-12" data-push-left="off-2_md-0">
                   <div className="aboutHero__resumeLink">
-                    <a className="button" href="https://www.linkedin.com/in/justinrod/" target="_blank" rel="noopener noreferrer"><span>View Resume</span></a>
+                    <a className="button" href="https://drive.google.com/open?id=1q42bWB5TudzxePvnFMagN4EUVG_ctMUC" target="_blank" rel="noopener noreferrer"><span>View Resume</span></a>
                   </div>
                 </div>
               </div>
